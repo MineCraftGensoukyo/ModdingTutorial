@@ -10,4 +10,5 @@ nav:
   - 前言: index.md
   - 巧妇难为无米之炊:
       - 配置开发环境: build-environment/building.md
+      - 基础设置: build-environment/settings.md
       - 一些概念: build-environment/conceptions.md
