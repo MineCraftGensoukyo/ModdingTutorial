@@ -1,1 +1,13 @@
-site_name: My Docs
+site_name: MCG模组教程
+theme:
+  name: material
+  features:
+    - navigation.footer
+    - navigation.indexes
+repo_url: https://github.com/MineCraftGensoukyo/ModdingTutorial
+
+nav:
+  - 前言: index.md
+  - 巧妇难为无米之炊:
+      - 配置开发环境: build-environment/building.md
+      - 一些概念: build-environment/conceptions.md

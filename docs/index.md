@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# 0.1. 这是什么
+我想，当你点开这本书的时候，这是什么已经不再是什么很必要的问题，当然，我还是解答一下吧。 
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+这本书是面向所有愿意为MCG开发贡献一份力的，有空余时间，道德品行端正的毛玉/妖精/妖怪（甚至妖贤？）的一本模组开发的教程。
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+无论如何，欢迎各位来探索模组这一世界。
