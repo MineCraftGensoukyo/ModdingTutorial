@@ -15,7 +15,7 @@
       - `mod_version`的值为`0.0.1`
       - `mod_authors`的值为`kaatenn`
       - `mod_description`的值为`A mod for writing a tutorial for Minecraft modding in Minecraft Gensoukyo.`
-    - `mod_group_id`也必须需要修改，但是会在下一章节讲述
+    - `mod_group_id`也必须需要修改，但是会在[下一章节](../basic/mod.md)讲述
 - 打开`settings.gradle`
     - 根据图示加上`maven { url = 'https://maven.parchmentmc.org' }`
 

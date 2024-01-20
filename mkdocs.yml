@@ -12,3 +12,5 @@ nav:
       - 配置开发环境: build-environment/building.md
       - 基础设置: build-environment/settings.md
       - 一些概念: build-environment/conceptions.md
+  - 入门:
+      - 啥都没有的模组: basic/mod.md
