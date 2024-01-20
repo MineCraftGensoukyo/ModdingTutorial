@@ -368,9 +368,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#mod_idmod_name" class="md-nav__link">
     <span class="md-ellipsis">
-      阅前注意
+      "mod_id"和"mod_name"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=""mod_id"和"mod_name"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      mod_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mod_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      mod_id
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warning
     </span>
   </a>
   
@@ -398,15 +431,6 @@
   <a href="#forge" class="md-nav__link">
     <span class="md-ellipsis">
       那Forge到底是啥
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mod_idmod_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      "mod_id"和"mod_name"
     </span>
   </a>
   
@@ -455,9 +479,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#mod_idmod_name" class="md-nav__link">
     <span class="md-ellipsis">
-      阅前注意
+      "mod_id"和"mod_name"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=""mod_id"和"mod_name"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      mod_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mod_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      mod_id
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warning
     </span>
   </a>
   
@@ -490,15 +547,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#mod_idmod_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      "mod_id"和"mod_name"
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -518,10 +566,23 @@
 
 
 <h1 id="1x">1.x 一些概念</h1>
-<h2 id="_1">阅前注意</h2>
-<p>这段内容对于没有学过Java或者没有编程经验的人来说不太友好，没关系，你大可以直接跳到下一章节。这一章节的目的只是解答一些疑惑而已，是否阅读其实并不重要。</p>
+<h2 id="mod_idmod_name">"mod_id"和"mod_name"</h2>
+<p>应该会注意到，我们用的Mod的ID和Name的值非常像，就是个大小写的问题，那为什么要写两遍内容几乎相同的东西呢？</p>
+<p>首先要明确的一件事情是，上述二者的值其实没有任何关联，但是它们的含义几乎注定了它们的值会非常相近。</p>
+<h3 id="mod_name">mod_name</h3>
+<p>先说比较好理解的mod_name，顾名思义，它就是模组的名字，你会在Minecraft的模组页看到它，也就是这里：</p>
+<p><img alt="Mod页面" src="../images/mod_page.png" /></p>
+<p>除此之外，基本上就没啥用了。</p>
+<h3 id="mod_id">mod_id</h3>
+<p>mod_id是一个模组的唯一标识符，如果你的Minecraft中有两个模组的mod_id相同，那么Minecraft会认为它们是两个相同的模组而表示它们出现了冲突。</p>
+<p>它在游戏里面的体现方式是所有与它相关的东西，在使用指令时都必须加上mod_id。</p>
+<p>在这里我们因为还没有制作任何东西，所以我们用MCG来距离。在MCG中，有个模组的id是<code>mcgproject</code>，那么我们在使用<code>give</code>指令获取一个物品的时候就应该这样写：</p>
+<pre><code>/give kaatenn mcgproject:wool_stair_brown
+</code></pre>
+<h2 id="warning">Warning</h2>
+<p>接下来的内容对于没有学过Java或者没有编程经验的人来说不太友好，没关系，你大可以直接跳到下一章节。后面的内容的目的只是解答一些疑惑而已，是否阅读其实并不重要。</p>
 <h2 id="mcp">MCP</h2>
-<p>明明我们在学的是Forge开发啊，那MCP是什么？</p>
+<p>很奇怪的一件事情是，明明Minecraft是个商业项目，我们是怎么轻易得到它的“源代码”的？</p>
 <p>其实Mojang从来没有给出过Minecraft的源代码，但是问题是作为一个Java项目，你永远无法阻止人去反编译你的代码。</p>
 <p>但是反编译出来的代码我相信你是肯定看不懂的，随便举个例子（当然这个例子是我伪造的，但差不多就是这个感觉）：</p>
 <pre><code class="language-java">public class _a18111_ extends _b14110_ implements _c13851, _a39542 {
@@ -550,8 +611,6 @@
 1. 一套API以及对底层的修改方案
 2. 改善Mod间兼容性的系统</p>
 <p>所以，Forge其实是一个开发框架，用于方便Mod的开发以及不同Mod之间的兼容。</p>
-<h2 id="mod_idmod_name">"mod_id"和"mod_name"</h2>
-<p>好的，晦涩难懂的部分结束了，我们来看点轻松愉快的。</p>
 
 
 
