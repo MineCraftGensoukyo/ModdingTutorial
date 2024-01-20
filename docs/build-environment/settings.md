@@ -1,5 +1,5 @@
 # 1.2 基础设置
-由于这部分内容涉及到Modding的一些概念，可能会有些难，我会把Mod相关的部分的解释放在[这篇文章](conceptions.md)中，有兴趣的话可以进行阅读。
+由于这部分内容涉及到Modding的一些概念，可能会有些难，我会把Mod相关的部分的解释放在[这篇文章](conceptions.md)中。
 
 但是无论如何，你是否理解这些内容并不影响你能否对这些内容成功设置，现在请打开你的项目，一项项修改下面的内容：
 
@@ -24,6 +24,6 @@
 - 打开`build.gradle`
     - 根据图示加上`id 'org.parchmentmc.librarian.forgegradle' version '1.+'`
 
-  ![Build设置](images/build.gradle_content.png)
+![Build设置](images/build.gradle_content.png)
 
 然后重新加载Gradle项目，出现`BUILD SUCCESSFUL`时，除了`mod_group_id`外的所有设置就配置完毕了。
