@@ -14,3 +14,4 @@ nav:
       - 一些概念: build-environment/conceptions.md
   - 入门:
       - 啥都没有的模组: basic/mod.md
+      - 基础物品: basic/item.md
