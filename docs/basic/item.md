@@ -1,6 +1,6 @@
 # 2.2 基础物品
 ## 阅前注意
-从本节开始，将会涉及到一些Forge相关的概念，这些概念会和第一章一样放在最后一节进行讲解（需要讲解的概念会放在每节的最后一段）。
+从本节开始，将会涉及到一些Forge相关的概念，这些概念会和第一章一样放在最后一节进行讲解（需要讲解的概念会放在每节的[最后一段](#forge相关概念)）。
 ## 注册物品
 在Forge中，我们需要将物品进行“注册”才能够在Minecraft中使用。
 
@@ -23,7 +23,7 @@ public class ItemRegister {
 这个容器现在是空的，我们要做的就是向这个容器中添加我们想要注册的物品。我们先注册一个简单的，没有任何别的作用的物品：
 
 ```java
-public static final RegistryObject<Item> WATER_BOTTLE = ITEMS.register("water_bottle", () -> new Item(new Item.Properties()));
+public static final RegistryObject<Item> KETTLE = ITEMS.register("kettle", () -> new Item(new Item.Properties()));
 ```
 
 `RegistryObject`是一个指针，指向了我们注册的物品，这个概念比较难以理解，如果你不理解，可以简单理解为`RegistryObject`就是我们注册的物品（但实际上这是错的，不过是否能够理解不重要）。
@@ -47,9 +47,43 @@ public Thirst() {
 
 这里的`FMLJavaModLoadingContext.get().getModEventBus()`代表了Forge的事件总线，我们将我们的容器注册到这个事件总线中，这样Forge就能够识别我们的容器了。
 
-现在，我们可以在游戏中通过give命令获得我们注册的物品了：
+现在，我们可以在游戏中通过give命令获得我们注册的物品了（点击[runClient](../build-environment/building.md#构建环境)]运行游戏）：
 ```
-/give @s thirst:water_bottle
+/give @s thirst:kettle
 ```
 ![纯物品](images/empty_item.png)
 
+## 代码片段
+在本章节，我们修改了`Thirst`类以及创建了`ItemRegister`类，现在的文件结构如图：
+![文件结构](images/structure_2_2.png)
+
+### Thirst.java
+```java
+// imports
+
+@Mod(Thirst.MODID)
+public class Thirst {
+    public static final String MODID = "thirst";
+    private static final Logger LOGGER = LogUtils.getLogger();
+
+    public Thirst() {
+        var bus = FMLJavaModLoadingContext.get().getModEventBus();
+        ITEMS.register(bus);
+    }
+}
+```
+
+### ItemRegister.java
+```java
+// imports
+
+public class ItemRegister {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+
+    public static final RegistryObject<Item> KETTLE = ITEMS.register("kettle", () -> new Item(new Item.Properties()));
+}
+```
+
+## Forge相关概念
+- [事件](conceptions.md#事件和事件总线)
+- [事件总线](conceptions.md#事件和事件总线)
