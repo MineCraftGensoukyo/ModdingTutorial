@@ -52,3 +52,23 @@ MinecraftForge.EVENT_BUS.register(/*Something Registerable*/);
 和Mod事件总线一样，另外一种方法就是使用注解，只需要把`@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = MODID)`改成`@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE, modid = MODID)`即可
 
 可能你没听懂，没关系，后面遇到的时候我会给出一个具体的例子说明的，
+
+## Block与BlockState
+
+将这两个概念直译过来就是“方块和方块状态”。
+
+其实这个直译的名字相当不错，Block就代表了“这是什么方块”，BlockState就代表了“这个方块现在是什么状态”。
+
+如果你还不能理解，举个简单的例子：
+
+- 炼药锅是一种Block
+- 炼药锅是否有水就是两种不同的方块状态。
+
+## Item与ItemStack
+
+如果你理解栈位这个概念，那么直译过来的名字你应该很快就能理解。
+
+如果你不理解，那么Item代表了“这是什么物体”，ItemStack代表了“这个物品格里面的物品是怎样的”
+
+- 钻石是一种Item
+- 64个钻石是某个物品栏的某格里的内容的ItemStack

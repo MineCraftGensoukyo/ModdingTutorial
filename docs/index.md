@@ -8,6 +8,8 @@
 无论如何，欢迎各位来探索模组这一世界，我将会通过制作一个简单的模组制作来抛砖引玉。
 
 本教程中，若有任何侵权行为，请联系作者紫幕，联系方式如下：
+
 - QQ: 1924198467
 - 邮箱: komeijikaatenn@outlook.com
 - Minecraft幻想乡的任意接待群
+- 项目[issues](https://github.com/MineCraftGensoukyo/ModdingTutorial/issues)

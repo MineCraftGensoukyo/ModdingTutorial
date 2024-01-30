@@ -17,4 +17,10 @@ nav:
       - 基础物品: basic/item.md
       - 基础方块: basic/block.md
       - 稍微完善一下: basic/complete.md
+      - 本章拓展:
+        - 前言: basic/advanced/pre.md
+        - 资源专题:
+            - Blockstates: basic/advanced/resources/origin.md
+            - 模型和材质: basic/advanced/resources/models.md
+        - 建议自学内容: basic/advanced/recommend.md
       - 基础概念: basic/conceptions.md
