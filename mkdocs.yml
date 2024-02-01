@@ -24,3 +24,12 @@ nav:
             - 模型和材质: basic/advanced/resources/models.md
         - 建议自学内容: basic/advanced/recommend.md
       - 基础概念: basic/conceptions.md
+  - 有用的物品:
+      - 模组简介: item-basic/introduction.md
+      - 新建物品类: item-basic/construct.md
+      - 添加功能: item-basic/functions.md
+      - 给玩家添加物品: item-basic/add-item.md
+      - 本章拓展:
+          - 前言: item-basic/advanced/pre.md
+          - 建议自学内容: item-basic/advanced/recommend.md
+      - 重要概念: item-basic/conceptions.md
