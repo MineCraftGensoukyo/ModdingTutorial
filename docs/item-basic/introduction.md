@@ -22,6 +22,6 @@
 
 如果对Java不熟悉的读者，请按照我说的做，或者有兴趣的话自行查阅相关资料。
 
-另外，从本章开始，每一章所使用的代码在[Github](https://github.com/MineCraftGensoukyo/Thirst.git)的对应分支上均有提交，在教程中就不再放完整代码了。
+另外，从本章开始，每一章所使用的代码在[Github](https://github.com/MineCraftGensoukyo/Thirst/tree/chapter3)的对应分支上均有提交，在教程中就不再放完整代码了。
 
 那就开始吧，第一块内容 —— **一个可以多次饮用的水壶**
