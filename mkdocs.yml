@@ -39,4 +39,4 @@ nav:
       - 方块状态: block-basic/blockstates.md
       - 左键？: block-basic/canceled.md
       - 本章拓展:
-          - 建议自学内容: item-basic/advanced/recommend.md
+          - 建议自学内容: block-basic/advanced/recommend.md
