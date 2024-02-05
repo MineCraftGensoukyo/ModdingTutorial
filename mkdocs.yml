@@ -37,3 +37,6 @@ nav:
       - 本章内容: block-basic/introduction.md
       - 一些重复的操作: block-basic/construct.md
       - 方块状态: block-basic/blockstates.md
+      - 左键？: block-basic/canceled.md
+      - 本章拓展:
+          - 建议自学内容: item-basic/advanced/recommend.md

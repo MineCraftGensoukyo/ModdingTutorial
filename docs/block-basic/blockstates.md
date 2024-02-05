@@ -119,5 +119,52 @@ public @NotNull InteractionResult use(@NotNull BlockState blockState, @NotNull L
 }
 ```
 
-这样，每个不同的水位就会有不同的模型了，代码已经在GitHub仓库上了，就不在这里放模型代码和材质图片了（太长了）
+这样，每个不同的水位就会有不同的模型了，代码已经在[GitHub](https://github.com/MineCraftGensoukyo/Thirst/tree/chapter4)仓库上了，就不在这里放模型代码和材质图片了（太长了）
 
+好的，到这里位置，思路清晰，逻辑通顺，一气呵成。
+
+打开游戏，拿起水壶，右键水箱……？
+
+对，对吗？
+
+## 不可变的方块状态
+
+那找找原因吧——要么是方块状态错误，要么是渲染错误。
+
+很简单，再拿一个水壶右键它，然后发现，水壶里的水又没了。
+
+那很明确了，Property错误。
+
+检查一遍逻辑，没啥问题。
+
+那这一切就指向了一件事情：Property没有正确变化。
+
+事实上，在Forge中，当一个方块被放置时，它的Property就已经被确定了，是不可更改的。
+
+我们如果想要修改一个方块的Property，那么必须重新放置那个方块。
+
+现在，我们把我们之前的代码改一下：
+
+```java
+    @Override
+    public @NotNull InteractionResult use(@NotNull BlockState blockState, @NotNull Level level, @NotNull BlockPos blockPos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
+        ItemStack itemStack = player.getItemInHand(hand);
+        if (itemStack.is(KETTLE.get())) {
+            int kettleCurrentDuration = itemStack.getMaxDamage() - itemStack.getDamageValue();
+            int currentCisternLevel = blockState.getValue(WATER_LEVEL);
+            int cisternLeavingLevel = 4 - currentCisternLevel;
+            int couldInputLevel = Math.min(kettleCurrentDuration, cisternLeavingLevel);
+            itemStack.setDamageValue(itemStack.getDamageValue() + couldInputLevel);
+            if (itemStack.getDamageValue() == itemStack.getMaxDamage()) {
+                itemStack.shrink(1);
+                if (!level.isClientSide) {
+                    player.addItem(new ItemStack(EMPTY_KETTLE.get()));
+                }
+            }
+            level.setBlock(blockPos, blockState.setValue(WATER_LEVEL, currentCisternLevel + couldInputLevel), 0b0011);
+        }
+        return InteractionResult.SUCCESS;
+    }
+```
+
+此时再进入游戏就会发现，一切都正常了。
