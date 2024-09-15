@@ -51,3 +51,12 @@ nav:
           - 创建HUD: groundwork/hud/hud.md
       - 本章拓展:
           - 前言: groundwork/advanced/pre.md
+  - 自学能力:
+      - 前言: self-study/pre.md
+      - 搜索引擎（流体制作）:
+          - 前言: self-study/engine/pre.md
+          - 搜索: self-study/engine/search.md
+      - AI:
+          - 前言: self-study/ai/pre.md
+          - 典型错误:
+              - 模型错误: self-study/ai/error/model.md
