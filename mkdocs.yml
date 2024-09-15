@@ -40,3 +40,14 @@ nav:
       - 左键？: block-basic/canceled.md
       - 本章拓展:
           - 建议自学内容: block-basic/advanced/recommend.md
+  - 一些铺垫:
+      - 前言: groundwork/pre.md
+      - 网络:
+          - 概念描述: groundwork/network/conceptions.md
+          - 创建数据包: groundwork/network/packet.md
+          - Channel: groundwork/network/channel.md
+      - HUD:
+          - 概念描述: groundwork/hud/conceptions.md
+          - 创建HUD: groundwork/hud/hud.md
+      - 本章拓展:
+          - 前言: groundwork/advanced/pre.md
