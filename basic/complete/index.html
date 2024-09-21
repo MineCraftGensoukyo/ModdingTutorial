@@ -2765,7 +2765,7 @@
 <h2 id="_15">创造模式物品栏</h2>
 <h3 id="_16">引入现有创造模式物品栏</h3>
 <p>引入现有创造模式物品栏也要求我们订阅一个事件，这个事件是<code>BuildCreativeModeTabContentsEvent</code>。</p>
-<p>在这里，我们需要使用另一形式来订阅时间，具体原因见<a href="../conceptions/">概念解析</a>。</p>
+<p>在这里，我们需要使用另一形式来订阅事件，具体原因见<a href="../conceptions/">概念解析</a>。</p>
 <p>我们先新建一个软件包<code>moe.gensoukyo.thirst.event</code>，然后建立一个类<code>ModEventSubscriber</code>，然后在这个类中添加如下代码：</p>
 <pre><code class="language-java">import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
