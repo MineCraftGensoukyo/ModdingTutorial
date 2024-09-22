@@ -60,3 +60,10 @@ nav:
           - 前言: self-study/ai/pre.md
           - 典型错误:
               - 模型错误: self-study/ai/error/model.md
+  - 资源生成:
+      - 前言: datagen/pre.md
+      - 开始: datagen/begin.md
+      - 物品: datagen/item.md
+      - 方块: datagen/block.md
+      - 语言: datagen/language.md
+      - 碎碎念: datagen/extra.md
