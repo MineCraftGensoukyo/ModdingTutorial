@@ -397,7 +397,7 @@ blockstates文件的作用就是指定在什么状态下使用什么模型。
 
 引入现有创造模式物品栏也要求我们订阅一个事件，这个事件是`BuildCreativeModeTabContentsEvent`。
 
-在这里，我们需要使用另一形式来订阅时间，具体原因见[概念解析](conceptions.md)。
+在这里，我们需要使用另一形式来订阅事件，具体原因见[概念解析](conceptions.md)。
 
 我们先新建一个软件包`moe.gensoukyo.thirst.event`，然后建立一个类`ModEventSubscriber`，然后在这个类中添加如下代码：
 

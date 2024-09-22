@@ -18,7 +18,7 @@ mod_id是一个模组的唯一标识符，如果你的Minecraft中有两个模�
 
 它在游戏里面的体现方式是所有与它相关的东西，在使用指令时都必须加上mod_id。
 
-在这里我们因为还没有制作任何东西，所以我们用MCG来距离。在MCG中，有个模组的id是`mcgproject`，那么我们在使用`give`指令获取一个物品的时候就应该这样写：
+在这里我们因为还没有制作任何东西，所以我们用MCG来举例。在MCG中，有个模组的id是`mcgproject`，那么我们在使用`give`指令获取一个物品的时候就应该这样写：
 
 ```
 /give kaatenn mcgproject:wool_stair_brown
