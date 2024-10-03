@@ -67,3 +67,10 @@ nav:
       - 方块: datagen/block.md
       - 语言: datagen/language.md
       - 碎碎念: datagen/extra.md
+  - 方块实体:
+      - 前言: blockentity-basic/pre.md
+      - 注册方块实体: blockentity-basic/register.md
+      - 基础方块: blockentity-basic/baseentityblock.md
+      - 方块实体: blockentity-basic/blockentity.md
+      - 方块实体的渲染: blockentity-basic/render.md
+      - 容器: blockentity-basic/container.md
