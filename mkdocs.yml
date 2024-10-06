@@ -74,3 +74,4 @@ nav:
       - 方块实体: blockentity-basic/blockentity.md
       - 方块实体的渲染: blockentity-basic/render.md
       - 容器: blockentity-basic/container.md
+      - 示例: blockentity-basic/example.md
