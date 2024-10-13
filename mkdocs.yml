@@ -75,3 +75,7 @@ nav:
       - 方块实体的渲染: blockentity-basic/render.md
       - 容器: blockentity-basic/container.md
       - 示例: blockentity-basic/example.md
+  - 实体:
+      - 前言: base-entity/pre.md
+      - 注册: base-entity/register.md
+      - 基础: base-entity/base.md
