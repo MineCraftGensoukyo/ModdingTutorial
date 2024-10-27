@@ -79,3 +79,7 @@ nav:
       - 前言: base-entity/pre.md
       - 注册: base-entity/register.md
       - 基础: base-entity/base.md
+  - 黑魔法:
+      - 前言: magic/pre.md
+      - AT: magic/at.md
+      - mixin: magic/mixin.md
