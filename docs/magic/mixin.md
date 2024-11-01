@@ -2,9 +2,13 @@
 
 Mixin，俗称迷信，使用ASM的Tree API解析的原始字节码。这个API生成一个基于节点的底层字节码视图，然后可以通过Mixin转换器（Transformer）合并到目标类中。
 
-Mixin虽然好用，但是相比较而言也更加危险，兼容性更低，引发的错误也更难排查，很多时候mixin造成的报错会使得日志堆栈都是原版路径，
+Mixin虽然好用，但是相比较而言也更加危险，兼容性更低，引发的错误也更难排查，很多时候mixin造成的报错会使得日志堆栈都是原版路径，甚至引发某些奇妙的行为。在调试整合包中的mixin问题时候，可以加入-Dmixin.debug.export=true作为jvm参数来导出所有mixin类
 
 关于mixin的原理和文档，可以直接阅读mouse0w0翻译的mixin文档[mixin](https://mouse0w0.github.io/tags/Mixin/)
+
+关于用例，也可以直接阅览fabric的mixin文档[FabricMixin](https://fabricmc.net/wiki/zh_cn:tutorial:mixin_introduction)
+
+(虽然这件事很奇怪，但是fabric的mixin文档确实相比较而言比较完善，Forge甚至没有关于mixin的文档)
 
 这里只给出我个人的几个示例）
 

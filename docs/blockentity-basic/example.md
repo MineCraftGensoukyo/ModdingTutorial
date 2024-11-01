@@ -117,11 +117,17 @@
                         .uv2(pPackedLight).normal(0.0F, 1.0F, 0.0F).endVertex();
 ```
 .vertex开始写入的顶点数据，matrix4f是当前的位姿，后面三个参数是顶点坐标的x,y,z
+
 .color写入rgba数据，也就是颜色和透明度
+
 .uv写入这个顶点在对应精灵图上的uv坐标
+
 .overlayCoord详情可以看这篇教程 [OverlayTexture](https://zomb-676.github.io/CobaltDocs/#/render/overlayTexture)
+
 .uv2写入光照数据
+
 .normal写入法线数据
+
 .endVertex封装顶点数据
 
 那么我们分别写入四个坐标为(0,height,0) (0,height,1) (1,height,1) (1,height,0)的顶点，就在height高度，渲染出来一个白色的1*1的水面

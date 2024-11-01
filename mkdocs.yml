@@ -7,6 +7,7 @@ theme:
 repo_url: https://github.com/MineCraftGensoukyo/ModdingTutorial
 
 nav:
+  - 折跃门: gateway/gateway.md
   - 前言: index.md
   - 巧妇难为无米之炊:
       - 配置开发环境: build-environment/building.md
@@ -75,10 +76,14 @@ nav:
       - 方块实体的渲染: blockentity-basic/render.md
       - 容器: blockentity-basic/container.md
       - 示例: blockentity-basic/example.md
-  - 实体:
+  - 实体基础:
       - 前言: base-entity/pre.md
       - 注册: base-entity/register.md
       - 基础: base-entity/base.md
+  - 能力:
+      - 前言: capability/pre.md
+      - 开始使用能力: capability/begin.md
+      - 使用预定义能力: capability/handler.md
   - 黑魔法:
       - 前言: magic/pre.md
       - AT: magic/at.md

@@ -24,3 +24,5 @@
 
    }
 ```
+
+关于方法签名，可以在neoforge文档中查阅[Specifying Types](https://docs.neoforged.net/docs/advanced/accesstransformers/#specifying-types)
