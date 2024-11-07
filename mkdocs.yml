@@ -7,51 +7,51 @@ theme:
 repo_url: https://github.com/MineCraftGensoukyo/ModdingTutorial
 
 nav:
-  - 折跃门: gateway/gateway.md
+  - 折跃门: -1-gateway/gateway.md
   - 前言: index.md
   - 巧妇难为无米之炊:
-      - 配置开发环境: build-environment/building.md
-      - 基础设置: build-environment/settings.md
-      - 一些概念: build-environment/conceptions.md
+      - 配置开发环境: 1-build-environment/building.md
+      - 基础设置: 1-build-environment/settings.md
+      - 一些概念: 1-build-environment/conceptions.md
   - 入门:
-      - 啥都没有的模组: basic/mod.md
-      - 基础物品: basic/item.md
-      - 基础方块: basic/block.md
-      - 稍微完善一下: basic/complete.md
+      - 啥都没有的模组: 2-basic/mod.md
+      - 基础物品: 2-basic/item.md
+      - 基础方块: 2-basic/block.md
+      - 稍微完善一下: 2-basic/complete.md
       - 本章拓展:
-        - 前言: basic/advanced/pre.md
+        - 前言: 2-basic/advanced/pre.md
         - 资源专题:
-            - Blockstates: basic/advanced/resources/origin.md
-            - 模型和材质: basic/advanced/resources/models.md
-        - 建议自学内容: basic/advanced/recommend.md
-      - 基础概念: basic/conceptions.md
+            - Blockstates: 2-basic/advanced/resources/origin.md
+            - 模型和材质: 2-basic/advanced/resources/models.md
+        - 建议自学内容: 2-basic/advanced/recommend.md
+      - 基础概念: 2-basic/conceptions.md
   - 有用的物品:
-      - 模组简介: item-basic/introduction.md
-      - 新建物品类: item-basic/construct.md
-      - 添加功能: item-basic/functions.md
-      - 给玩家添加物品: item-basic/add-item.md
+      - 模组简介: 3-item-basic/introduction.md
+      - 新建物品类: 3-item-basic/construct.md
+      - 添加功能: 3-item-basic/functions.md
+      - 给玩家添加物品: 3-item-basic/add-item.md
       - 本章拓展:
-          - 前言: item-basic/advanced/pre.md
-          - 建议自学内容: item-basic/advanced/recommend.md
-      - 重要概念: item-basic/conceptions.md
+          - 前言: 3-item-basic/advanced/pre.md
+          - 建议自学内容: 3-item-basic/advanced/recommend.md
+      - 重要概念: 3-item-basic/conceptions.md
   - 有用的方块:
-      - 本章内容: block-basic/introduction.md
-      - 一些重复的操作: block-basic/construct.md
-      - 方块状态: block-basic/blockstates.md
-      - 左键？: block-basic/canceled.md
+      - 本章内容: 4-block-basic/introduction.md
+      - 一些重复的操作: 4-block-basic/construct.md
+      - 方块状态: 4-block-basic/blockstates.md
+      - 左键？: 4-block-basic/canceled.md
       - 本章拓展:
-          - 建议自学内容: block-basic/advanced/recommend.md
+          - 建议自学内容: 4-block-basic/advanced/recommend.md
   - 一些铺垫:
-      - 前言: groundwork/pre.md
+      - 前言: 5-groundwork/pre.md
       - 网络:
-          - 概念描述: groundwork/network/conceptions.md
-          - 创建数据包: groundwork/network/packet.md
-          - Channel: groundwork/network/channel.md
+          - 概念描述: 5-groundwork/network/conceptions.md
+          - 创建数据包: 5-groundwork/network/packet.md
+          - Channel: 5-groundwork/network/channel.md
       - HUD:
-          - 概念描述: groundwork/hud/conceptions.md
-          - 创建HUD: groundwork/hud/hud.md
+          - 概念描述: 5-groundwork/hud/conceptions.md
+          - 创建HUD: 5-groundwork/hud/hud.md
       - 本章拓展:
-          - 前言: groundwork/advanced/pre.md
+          - 前言: 5-groundwork/advanced/pre.md
   - 自学能力:
       - 前言: self-study/pre.md
       - 搜索引擎（流体制作）:
