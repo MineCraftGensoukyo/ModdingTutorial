@@ -1,0 +1,3746 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../block/">
+      
+      
+        <link rel="next" href="../advanced/pre/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>稍微完善一下 - MCG模组教程</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#24" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MCG模组教程" class="md-header__button md-logo" aria-label="MCG模组教程" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MCG模组教程
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              稍微完善一下
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MineCraftGensoukyo/ModdingTutorial" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MCG模组教程" class="md-nav__button md-logo" aria-label="MCG模组教程" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MCG模组教程
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MineCraftGensoukyo/ModdingTutorial" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../-1-gateway/gateway/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    折跃门
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    巧妇难为无米之炊
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            巧妇难为无米之炊
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-build-environment/building/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置开发环境
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-build-environment/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础设置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-build-environment/conceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一些概念
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    入门
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            入门
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    啥都没有的模组
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础物品
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础方块
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    稍微完善一下
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    稍微完善一下
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      目标
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      资源包
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      物品
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="物品">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      名字
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型和材质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型和材质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      材质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      完成效果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      方块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      名字
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型和材质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型和材质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blockstates" class="md-nav__link">
+    <span class="md-ellipsis">
+      blockstates文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      材质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockstates_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      讲解blockstates文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      数组？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      创造模式物品栏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="创造模式物品栏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      引入现有创造模式物品栏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      那方块呢？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="那方块呢？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#itemregisterjava" class="md-nav__link">
+    <span class="md-ellipsis">
+      ItemRegister.java
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelsitemcisternjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      models/item/cistern.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义创造模式物品栏
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      本节所有内容后的文件结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      特别说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forge相关概念
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    本章拓展
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            本章拓展
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_2" id="__nav_4_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    资源专题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            资源专题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/resources/origin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blockstates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/resources/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型和材质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/recommend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    建议自学内容
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础概念
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    有用的物品
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            有用的物品
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模组简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/construct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    新建物品类
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    添加功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/add-item/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    给玩家添加物品
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    本章拓展
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            本章拓展
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/advanced/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/advanced/recommend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    建议自学内容
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-item-basic/conceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    重要概念
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    有用的方块
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            有用的方块
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-block-basic/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    本章内容
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-block-basic/construct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一些重复的操作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-block-basic/blockstates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    方块状态
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-block-basic/canceled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    左键？
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    本章拓展
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            本章拓展
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-block-basic/advanced/recommend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    建议自学内容
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    一些铺垫
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            一些铺垫
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/network/conceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概念描述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/network/packet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    创建数据包
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/network/channel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Channel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HUD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            HUD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/hud/conceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概念描述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/hud/hud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    创建HUD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    本章拓展
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            本章拓展
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-groundwork/advanced/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    自学能力
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            自学能力
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-study/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    搜索引擎（流体制作）
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            搜索引擎（流体制作）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-study/engine/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-study/engine/search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    搜索
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-study/ai/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    典型错误
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            典型错误
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-study/ai/error/model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型错误
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    事件系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            事件系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.5-event/event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    事件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    资源生成
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            资源生成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-datagen/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-datagen/begin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-datagen/item/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    物品
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-datagen/block/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    方块
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-datagen/language/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    语言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-datagen/extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    碎碎念
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    方块实体
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            方块实体
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/register/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    注册方块实体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/baseentityblock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础方块
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/blockentity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    方块实体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/render/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    方块实体的渲染
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    容器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-blockentity-basic/example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    示例
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实体基础
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            实体基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../9-base-entity/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../9-base-entity/register/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    注册
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../9-base-entity/base/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    能力
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            能力
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10-capability/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10-capability/begin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始使用能力
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10-capability/handler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    使用预定义能力
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    黑魔法
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            黑魔法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../magic/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../magic/at/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../magic/mixin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mixin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      目标
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      资源包
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      物品
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="物品">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      名字
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型和材质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型和材质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      材质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      完成效果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      方块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      名字
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型和材质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型和材质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blockstates" class="md-nav__link">
+    <span class="md-ellipsis">
+      blockstates文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      材质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockstates_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      讲解blockstates文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      数组？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      创造模式物品栏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="创造模式物品栏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      引入现有创造模式物品栏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      那方块呢？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="那方块呢？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#itemregisterjava" class="md-nav__link">
+    <span class="md-ellipsis">
+      ItemRegister.java
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelsitemcisternjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      models/item/cistern.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义创造模式物品栏
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      本节所有内容后的文件结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      特别说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forge相关概念
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="24">2.4稍微完善一下</h1>
+<h2 id="_1">目标</h2>
+<p>想想我们在<a href="../item/">物品章节</a>和<a href="../block/">方块章节</a>做的两项，一个只能通过<code>/give</code>命令获得，一个只能通过<code>/setblock</code>命令放置，这显然不是一个正常的物品或者方块该有的样子。</p>
+<p>本章我们将会做两件事情：</p>
+<ul>
+<li>让物品和方块都有正常的名字和材质</li>
+<li>让物品可以在创造模式中直接拿到</li>
+<li>让方块可以在创造模式中拿到对应的物品并且放置</li>
+</ul>
+<p>注意，看起来描述都是“从创造模式拿到”，但是我的措辞不一样，待会儿要考）</p>
+<h2 id="_2">资源包</h2>
+<p>在Forge中，名字和材质是在资源目录下定义的，也就是<code>src/main/resources</code>。</p>
+<p>由于麻将的神必操作，现在Forge的资源文件只认这些目录下的内容：</p>
+<ul>
+<li><code>assets/&lt;modid&gt;/lang</code>：本地化文件</li>
+<li><code>assets/&lt;modid&gt;/textures/item</code>：物品材质文件</li>
+<li><code>assets/&lt;modid&gt;/models/item</code>：物品模型文件</li>
+<li><code>assets/&lt;modid&gt;/textures/block</code>：方块材质文件</li>
+<li><code>assets/&lt;modid&gt;/models/block</code>：方块模型文件</li>
+<li><code>assets/&lt;modid&gt;/blockstates</code>：方块状态文件</li>
+</ul>
+<p>目前我们要用到的就是这些，其他的先不管。</p>
+<h2 id="_3">物品</h2>
+<h3 id="_4">名字</h3>
+<p>给一个<code>名字</code>，其实就相当于在本地化文件中添加一个<code>键值对</code>，键是<code>物品id</code>，值是<code>名字</code>。可以简单理解为<code>id</code>和<code>名字</code>的对应关系</p>
+<p>我们的<code>mod_id</code>是<code>thirst</code>，那么我们的本地文件应该创建在<code>assets/thirst/lang</code>目录下，虽然有两种形式，但是我们在MCG中提倡使用<code>json</code>格式的文件。</p>
+<p><code>zh_cn.json</code>文件对应了中文语言，<code>en_us.json</code>文件对应了英文语言。</p>
+<p>如果我们想要给一个物品提供本地化，我们的格式应该是这样的：</p>
+<pre><code class="language-json">&quot;item.&lt;mod_id&gt;.&lt;item_id&gt;&quot;: &quot;&lt;name&gt;&quot;
+</code></pre>
+<p>那么，我们的<code>zh_cn.json</code>文件应该是这样的：</p>
+<pre><code class="language-json">{
+  &quot;item.thirst.kettle&quot;: &quot;水壶&quot;
+}
+</code></pre>
+<p>同样的，<code>en_us.json</code>文件应该是这样的：</p>
+<pre><code class="language-json">{
+  &quot;item.thirst.kettle&quot;: &quot;Kettle&quot;
+}
+</code></pre>
+<p>此时我们再回到游戏，我们就会发现"item.thirst.kettle"这个物品的名字变成了"水壶"。</p>
+<p><img alt="物品名字" src="../images/item_name.png" /></p>
+<h3 id="_5">模型和材质</h3>
+<p>物品的模型应当放在<code>assets/&lt;modid&gt;/models/item/&lt;item_id&gt;.json</code>文件里，物品的材质应当放在<code>assets/&lt;modid&gt;/textures</code>目录下。</p>
+<p>本节不讨论具体的模型和材质怎么制作，相关内容我希望读者可以自行探究，在<a href="../advanced/resources/origin/">资源专题</a>会有一些相关的指导。</p>
+<p>经作者同意，在这里放出物品的模型和材质，会进行简单讲解，供读者参考。</p>
+<h4 id="_6">模型</h4>
+<pre><code class="language-json">{
+  &quot;credit&quot;: &quot;Made with Blockbench&quot;,
+  &quot;render_type&quot;: &quot;cutout&quot;,
+  &quot;texture_size&quot;: [64, 64],
+  &quot;textures&quot;: {
+    &quot;0&quot;: &quot;thirst:item/canteen&quot;,
+    &quot;particle&quot;: &quot;thirst:item/canteen&quot;
+  },
+  &quot;elements&quot;: [
+    {
+      &quot;from&quot;: [2, 1, 3],
+      &quot;to&quot;: [12, 8, 13],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [8.38118, 4.5, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [2.5, 0, 5, 1.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [2.5, 1.75, 5, 3.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [2.5, 3.5, 5, 5.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [0, 5, 2.5, 6.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [2.5, 2.5, 0, 0], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [2.5, 2.5, 0, 5], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [15.19525, 5.88383, 7],
+      &quot;to&quot;: [16.19525, 10.88383, 9],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [15.69525, 9.88383, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [3.75, 8.25, 4, 9.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [4.5, 7.5, 5, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [6.25, 8.25, 6.5, 9.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [5, 7.5, 5.5, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [8.75, 7, 8.5, 6.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [7.25, 8.5, 7, 9], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [10.21199, 12.31109, 7.025],
+      &quot;to&quot;: [12.21199, 13.31109, 8.975],
+      &quot;rotation&quot;: {&quot;angle&quot;: 22.5, &quot;axis&quot;: &quot;z&quot;, &quot;origin&quot;: [12.91199, 12.81109, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [8.5, 7, 9, 7.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [7.25, 8.5, 7.75, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [8.5, 7.25, 9, 7.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [7.75, 8.5, 8.25, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [5, 5.75, 4.5, 5.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [0.5, 8.5, 0, 9], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [16.27255, 10.76308, 7.025],
+      &quot;to&quot;: [19.27255, 11.76308, 8.975],
+      &quot;rotation&quot;: {&quot;angle&quot;: -45, &quot;axis&quot;: &quot;z&quot;, &quot;origin&quot;: [16.67255, 15.03808, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [8.5, 5, 9.25, 5.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [2, 8.75, 2.5, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [8.5, 5.25, 9.25, 5.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [2.5, 8.75, 3, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [3.75, 8.75, 3, 8.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [6.25, 8.25, 5.5, 8.75], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [12.07393, 12.00515, 7],
+      &quot;to&quot;: [14.07393, 13.00515, 9],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [13.07393, 12.50515, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [8.5, 8, 9, 8.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [8.25, 8.5, 8.75, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [8.5, 8.25, 9, 8.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [1.5, 8.75, 2, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [1, 9, 0.5, 8.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [1.5, 8.5, 1, 9], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [3, 8, 4],
+      &quot;to&quot;: [11, 14, 12],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [8.38118, 4.5, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [4.5, 6, 6.5, 7.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [6.5, 6, 8.5, 7.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [0, 6.75, 2, 8.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [7, 0, 9, 1.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [7, 6, 5, 4], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [4.5, 5.25, 2.5, 7.25], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [10.50248, 4.2921, 7.025],
+      &quot;to&quot;: [16.50248, 5.2921, 8.975],
+      &quot;rotation&quot;: {&quot;angle&quot;: 45, &quot;axis&quot;: &quot;z&quot;, &quot;origin&quot;: [14.42748, 4.7171, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [5.5, 8, 7, 8.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [8.5, 5.75, 9, 6], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [7, 8, 8.5, 8.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [8.5, 6, 9, 6.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [8.5, 5.5, 7, 5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [8.5, 5.5, 7, 6], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [1.5, 14, 5],
+      &quot;to&quot;: [3.5, 15, 11],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [8.38118, 4.5, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [4.5, 5.75, 5, 6], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [8, 4.5, 9.5, 4.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [8.5, 5.5, 9, 5.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [8, 4.75, 9.5, 5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [2.5, 8.25, 2, 6.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [7.5, 3.5, 7, 5], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [10, 14, 5],
+      &quot;to&quot;: [12, 15, 11],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [10.75, 14.5, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [8.5, 6.25, 9, 6.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [0, 8.25, 1.5, 8.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [6.5, 8.5, 7, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [1.5, 8.25, 3, 8.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [4.5, 8.75, 4, 7.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [8, 3.5, 7.5, 5], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [2.5, 14, 3.5],
+      &quot;to&quot;: [11.5, 15, 5],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [7, 14.5, 4.5]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [5.5, 7.5, 7.75, 7.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [3, 8.75, 3.375, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [5.5, 7.75, 7.75, 8], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [4, 8.75, 4.375, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [9.25, 1.875, 7, 1.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [9.25, 2, 7, 2.375], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [2.5, 14, 11],
+      &quot;to&quot;: [11.5, 15, 12.5],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [7, 14.5, 11.5]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [7.75, 7.5, 10, 7.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [4.5, 8.75, 4.875, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [7.75, 7.75, 10, 8], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [5, 8.75, 5.375, 9], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [9.25, 2.875, 7, 2.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [9.25, 3, 7, 3.375], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [1.12409, 13.41836, 6],
+      &quot;to&quot;: [4.12409, 14.41836, 10],
+      &quot;rotation&quot;: {&quot;angle&quot;: -22.5, &quot;axis&quot;: &quot;z&quot;, &quot;origin&quot;: [2.32409, 14.11836, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [1.5, 8.5, 2.25, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [6.5, 8.25, 7.5, 8.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [2.25, 8.5, 3, 8.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [7.5, 8.25, 8.5, 8.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [3.25, 8.25, 2.5, 7.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [4, 7.25, 3.25, 8.25], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    },
+    {
+      &quot;from&quot;: [3, 0, 4],
+      &quot;to&quot;: [11, 1, 12],
+      &quot;rotation&quot;: {&quot;angle&quot;: 0, &quot;axis&quot;: &quot;y&quot;, &quot;origin&quot;: [8.38118, 4.5, 8]},
+      &quot;faces&quot;: {
+        &quot;north&quot;: {&quot;uv&quot;: [8, 3.5, 10, 3.75], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;east&quot;: {&quot;uv&quot;: [8, 3.75, 10, 4], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;south&quot;: {&quot;uv&quot;: [8, 4, 10, 4.25], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;west&quot;: {&quot;uv&quot;: [8, 4.25, 10, 4.5], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;up&quot;: {&quot;uv&quot;: [7, 2, 5, 0], &quot;texture&quot;: &quot;#0&quot;},
+        &quot;down&quot;: {&quot;uv&quot;: [7, 2, 5, 4], &quot;texture&quot;: &quot;#0&quot;}
+      }
+    }
+  ],
+  &quot;display&quot;: {
+    &quot;thirdperson_righthand&quot;: {
+      &quot;rotation&quot;: [45, -90, 0],
+      &quot;translation&quot;: [0, 1, -1.75],
+      &quot;scale&quot;: [0.5, 0.5, 0.5]
+    }
+  }
+}
+</code></pre>
+<h4 id="_7">材质</h4>
+<p><img alt="水壶" src="../images/canteen.png" /></p>
+<h4 id="_8">完成效果</h4>
+<p>完成后的效果如下：
+<img alt="有模型物品" src="../images/item_has_model.png" /></p>
+<h2 id="_9">方块</h2>
+<h3 id="_10">名字</h3>
+<p>方块的名字和物品的名字一样，也是在本地化文件中添加一个<code>键值对</code>，键是<code>方块id</code>，值是<code>名字</code>。可以简单理解为<code>id</code>和<code>名字</code>的对应关系</p>
+<p>格式如下：</p>
+<pre><code class="language-json">&quot;block.&lt;mod_id&gt;.&lt;block_id&gt;&quot;: &quot;&lt;name&gt;&quot;
+</code></pre>
+<p>那么，我们的<code>zh_cn.json</code>文件应该是这样的：</p>
+<pre><code class="language-json">{
+  &quot;block.thirst.cistern&quot;: &quot;水箱&quot;
+}
+</code></pre>
+<p>同样的，<code>en_us.json</code>文件应该是这样的：</p>
+<pre><code class="language-json">{
+  &quot;block.thirst.cistern&quot;: &quot;Cistern&quot;
+}
+</code></pre>
+<h3 id="_11">模型和材质</h3>
+<p>方块应当使用什么模型会在<code>assets/&lt;modid&gt;/blockstates/&lt;block_id&gt;.json</code>文件中定义。</p>
+<p>而模型（注意，物品的模型文件名必须是物品ID，但是方块不作此限制）和材质的位置类似物品，在<code>assets/&lt;modid&gt;/models/block</code>和<code>assets/&lt;modid&gt;/textures/block</code>目录下。</p>
+<p>同样的，本节不讨论具体的模型和材质怎么制作，相关内容我希望读者可以自行探究，在<a href="../advanced/resources/origin/">资源专题</a>会有一些相关的指导。</p>
+<p>由于我们的方块的特殊性质（这会在以后详细说明），我将注册时的代码进行修改：</p>
+<pre><code class="language-java">public static final RegistryObject&lt;Block&gt; CISTERN = BLOCKS.register(&quot;cistern&quot;, () -&gt; new Block(BlockBehaviour.Properties.of().noOcclusion()));
+</code></pre>
+<p>虽然我后续会讲解这个更改的理由是什么，但是感兴趣的话也可以自己进行探究（比如如果不进行这个修改会发生什么）</p>
+<p>与物品不同的是，这里会简单讲解blockstates文件的内容。不过，先把几个文件的具体内容放在下面：</p>
+<h4 id="blockstates">blockstates文件</h4>
+<pre><code class="language-json">{
+  &quot;variants&quot;: {
+    &quot;&quot;: [{
+      &quot;model&quot;: &quot;thirst:block/sink_septex0&quot;
+    }]
+  }
+}
+</code></pre>
+<h4 id="_12">模型</h4>
+<pre><code class="language-json">{
+    &quot;credit&quot;: &quot;Made with Blockbench&quot;,
+    &quot;render_type&quot;: &quot;translucent&quot;,
+    &quot;texture_size&quot;: [64, 64],
+    &quot;textures&quot;: {
+        &quot;0&quot;: &quot;thirst:block/sink&quot;,
+        &quot;particle&quot;: &quot;thirst:block/sink&quot;
+    },
+    &quot;elements&quot;: [
+        {
+            &quot;name&quot;: &quot;sink&quot;,
+            &quot;from&quot;: [1, 0, 1],
+            &quot;to&quot;: [15, 16, 15],
+            &quot;faces&quot;: {
+                &quot;north&quot;: {&quot;uv&quot;: [0, 0, 3.5, 4], &quot;texture&quot;: &quot;#0&quot;},
+                &quot;east&quot;: {&quot;uv&quot;: [3.5, 0, 7, 4], &quot;texture&quot;: &quot;#0&quot;},
+                &quot;south&quot;: {&quot;uv&quot;: [0, 4, 3.5, 8], &quot;texture&quot;: &quot;#0&quot;},
+                &quot;west&quot;: {&quot;uv&quot;: [3.5, 4, 7, 8], &quot;texture&quot;: &quot;#0&quot;},
+                &quot;up&quot;: {&quot;uv&quot;: [10.5, 3.5, 7, 0], &quot;texture&quot;: &quot;#0&quot;},
+                &quot;down&quot;: {&quot;uv&quot;: [10.5, 3.5, 7, 7], &quot;texture&quot;: &quot;#0&quot;}
+            }
+        }
+    ]
+}
+</code></pre>
+<h4 id="_13">材质</h4>
+<p><img alt="水箱" src="../images/sink.png" /></p>
+<p>在完成后，方块将会变成这样：</p>
+<p><img alt="有模型方块" src="../images/block_has_model.png" /></p>
+<h3 id="blockstates_1">讲解blockstates文件</h3>
+<p>和语言文件一样，只要是json格式的文件，那都是键值对的形式，只是这里出现了几层嵌套。</p>
+<p>首先，我们要知道，这个文件的作用是什么。</p>
+<p>在Forge中，一个方块可能会有多种模型，例如说半砖，在不同组合、不同放置方向下会表现出不同的模型，这时候就需要用到blockstates文件。</p>
+<p>blockstates文件的作用就是指定在什么状态下使用什么模型。</p>
+<p><code>variants</code>翻译过来就是变种，以它作为键，它的内容就是在不同情况下的模型文件的位置。</p>
+<p>而接下来的<code>""</code>，是一个空字符串，这个空字符串表示默认情况下的模型文件的位置，在这里，<code>thirst:block/sink_septex0</code>就表示我们此时应当使用的模型文件应该是<code>assets/thirst/models/block/sink_septex0.json</code>。</p>
+<p>至于这里的的<code>""</code>，里面的内容是什么，这就和Properties有关了。虽然这不应该是这个章节的内容，但是出于某些原因（再多看几章你就知道为什么了），我在这里简单讲述下。</p>
+<p>在Minecraft中，方块的状态是由Properties来决定的，例如半砖，它的Properties有<code>type</code>一种，表示半砖是放在上半部分、下半部分还是全方块。</p>
+<p>那么一个简单的半砖的blockstates文件应该是这样的：</p>
+<pre><code class="language-json">{
+  &quot;variants&quot;: {
+    &quot;type=bottom&quot;: [{
+      &quot;model&quot;: &quot;&lt;mod_id&gt;:block/&lt;model_file_name1&gt;&quot;
+    }],
+    &quot;type=top&quot;: [{
+      &quot;model&quot;: &quot;&lt;mod_id&gt;:block/&lt;model_file_name2&gt;&quot;
+    }],
+    &quot;type=double&quot;: [{
+      &quot;model&quot;: &quot;&lt;mod_id&gt;:block/&lt;model_file_name3&gt;&quot;
+    }]
+  }
+}
+</code></pre>
+<p>这时候就表示了在不同的Properties下使用不同的模型文件，当然，如果你其中两条指向了相同的模型文件，那么这两个Properties就会有相同的模型。</p>
+<h3 id="_14">数组？</h3>
+<p>你可能注意到了，在Properties的键值对中，值是用<code>[]</code>包裹的，这表示它的值是一个数组。</p>
+<p>这个数组的含义其实很简单，如果你在一个Properties下使用了多个模型文件，那么在这个状态下，方块会随机挑选一个模型文件来使用。</p>
+<h2 id="_15">创造模式物品栏</h2>
+<h3 id="_16">引入现有创造模式物品栏</h3>
+<p>引入现有创造模式物品栏也要求我们订阅一个事件，这个事件是<code>BuildCreativeModeTabContentsEvent</code>。</p>
+<p>在这里，我们需要使用另一形式来订阅事件，具体原因见<a href="../conceptions/">概念解析</a>。</p>
+<p>我们先新建一个软件包<code>moe.gensoukyo.thirst.event</code>，然后建立一个类<code>ModEventSubscriber</code>，然后在这个类中添加如下代码：</p>
+<pre><code class="language-java">import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+
+import static moe.gensoukyo.thirst.Thirst.MODID;
+import static moe.gensoukyo.thirst.register.ItemRegister.KETTLE;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = MODID)
+public class ModEventSubscriber {
+    @SubscribeEvent
+    public static void addCreativeTab(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(KETTLE.get());
+        }
+    }
+}
+</code></pre>
+<p>首先要说明的是，和脚本不一样，在Modding中，不同文件之间可以是有关联的，所以我们需要通过<code>import</code>关键字来引入其他文件中的内容。</p>
+<p>像我们之前的<code>MODID</code>和<code>KETTLE</code>，都是在其他文件中定义的，我们通过<code>import</code>关键字来引入这些内容。</p>
+<p>然后，我们在这个类中添加了一个静态方法<code>addCreativeTab</code>，这个方法的参数是<code>BuildCreativeModeTabContentsEvent</code>，这个参数就是我们要订阅的事件的类。</p>
+<p>顾名思义，这个类所指向的事件就是构建创造模式物品栏的事件。</p>
+<p>在这个方法中，我们首先判断了正在构建的创造模式物品栏是否是<code>食物与饮品</code>，如果是，那么我们就把<code>KETTLE</code>，也就是我们的水壶这个物品放进去。</p>
+<p>这样我们就可以在创造模式中拿到我们的水壶了。</p>
+<h3 id="_17">那方块呢？</h3>
+<p>现在你可以尝试一下，如果用中键来尝试复制水箱方块，你会发现你根本获取不到这个方块。</p>
+<p>那是因为这个方块它只是一个方块，它没有对应的物品。</p>
+<p>所以我们需要单独为它注册一个物品，同时我们需要让他是一个<code>ItemBlock</code>类的<code>Item</code>，这样我们才能将它与我们的方块对应起来。</p>
+<p>此时我们不需要再为它起一个名字了，因为它的名字就是方块的名字。</p>
+<p>而如果我们不为它特别做一个模型，我们也可以通过一种形式让它和方块共用一个模型（我们会在<a href="../advanced/resources/origin/">资源专题</a>中讲解）。</p>
+<p>此处为具体的代码：</p>
+<h4 id="itemregisterjava">ItemRegister.java</h4>
+<pre><code class="language-java">// imports
+
+public class ItemRegister {
+    public static final DeferredRegister&lt;Item&gt; ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+
+    public static final RegistryObject&lt;Item&gt; KETTLE = ITEMS.register(&quot;kettle&quot;, () -&gt; new Item(new Item.Properties()));
+
+    public static final RegistryObject&lt;Item&gt; CISTERN = ITEMS.register(&quot;cistern&quot;, () -&gt; new BlockItem(BlockRegister.CISTERN.get(), new Item.Properties()));
+}
+</code></pre>
+<h4 id="modelsitemcisternjson">models/item/cistern.json</h4>
+<pre><code class="language-json">{
+  &quot;parent&quot;: &quot;thirst:block/sink_septex0&quot;
+}
+</code></pre>
+<h3 id="_18">自定义创造模式物品栏</h3>
+<p>当然，我们总不能一直用原生的创造模式物品栏，我们也可以自己定义一个。</p>
+<p>和注册物品一样，我们需要将创造模式物品栏进行注册，注册方式和注册物品大差不差。</p>
+<p>在<code>moe.gensoukyo.thirst.register</code>包中新建一个类<code>CreativeTabsRegister</code>，然后在这个类中添加如下代码：</p>
+<pre><code class="language-java">// imports 
+
+public class CreativeTabRegister {
+    public static final DeferredRegister&lt;CreativeModeTab&gt; CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+
+    public static final RegistryObject&lt;CreativeModeTab&gt; THIRST = CREATIVE_TABS.register(&quot;thirst_tab&quot;, () -&gt; CreativeModeTab.builder()
+            .title(Component.translatable(&quot;item_group.&quot; + MODID + &quot;.thirst_tab&quot;))
+            .icon(() -&gt; new ItemStack(ItemRegister.CISTERN.get()))
+            .displayItems((params, output) -&gt; {
+                output.accept(ItemRegister.CISTERN.get());
+            })
+            .build());
+}
+
+</code></pre>
+<p>有没有感觉比注册物品的长多了？</p>
+<p>其实很简单，注册物品的时候我们注册的还是个啥用没有的物品，我们不需要给它添加任何的属性，所以它看起来很短。</p>
+<p>但是创造模式物品栏不一样，它需要我们定义它的名字、图标、里面的物品等等，所以看起来就很长，但实际上两者是差不多的。</p>
+<p>以下是几个要注意的点：</p>
+<ul>
+<li>在使用DeferredRegister时，我们需要使用<code>Registries</code>类中的<code>CREATIVE_MODE_TAB</code>变量，而不是<code>ForgeRegistries.CREATIVE_MODE_TAB</code>，我们要存储的类型的来源和物品不一样</li>
+<li>在<code>title</code>中，我们使用了<code>Component.translatable</code>方法，这个方法的参数是一个字符串，这个字符串就是我们在本地化文件中定义的<code>键</code>，这样我们就可以在不同的语言环境下显示不同的名字了，此处我们相当于将键定义为了<code>item_group.thirst.thirst_tab</code>。</li>
+<li>在<code>icon</code>中，我们使用了<code>ItemStack</code>，并使用了<code>ItemRegister.CISTERN.get()</code>，这个方法的作用是获取<code>CISTERN</code>这个物品的<code>ItemStack</code>，这样就让我们的水壶的样子变成该创造模式物品栏的图标。</li>
+<li>在<code>displayItems</code>中，我们使用了这一形式的匿名函数（可以理解为临时的函数），在里面定义了这个物品栏里面有哪些物品。</li>
+<li>最后的<code>build</code>则是将这个物品栏构建成一个<code>CreativeModeTab</code>类的实例。</li>
+</ul>
+<p>然后我们在Mod的构造函数中添加这一行将该物品栏注册到Mod事件总线中：</p>
+<pre><code class="language-java">CREATIVE_TABS.register(bus);
+</code></pre>
+<p>最后在本地化文件中添加如下内容：</p>
+<pre><code class="language-json">{
+  &quot;item_group.thirst.thirst_tab&quot;: &quot;Thirst&quot;
+}
+</code></pre>
+<pre><code class="language-json">{
+  &quot;item_group.thirst.thirst_tab&quot;: &quot;口干舌燥&quot;
+}
+</code></pre>
+<p>这样我们就可以在创造模式中看到我们自定义的创造模式物品栏和里面的物品了。</p>
+<p><img alt="创造模式物品栏" src="../images/creative_mod_tab.png" /></p>
+<h2 id="_19">本节所有内容后的文件结构</h2>
+<p><img alt="代码文件结构" src="../images/structure_2_4_1.png" /></p>
+<p><img alt="资源文件结构" src="../images/structure_2_4_2.png" /></p>
+<h2 id="_20">特别说明</h2>
+<p>本教程中，模型文件和材质文件的制作均由Minecraft幻想乡美工组成员KotiyaSanae完成。</p>
+<p>本教程中，所有模型文件和材质文件的使用均由KotiyaSanae授权，未经许可，不得擅自转载或用于商业用途。</p>
+<h2 id="forge">Forge相关概念</h2>
+<ul>
+<li>Item与ItemStack</li>
+<li>Block与BlockState</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../block/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 基础方块">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                基础方块
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../advanced/pre/" class="md-footer__link md-footer__link--next" aria-label="Next: 前言">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                前言
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
