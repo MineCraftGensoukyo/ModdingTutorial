@@ -1,6 +1,6 @@
 # 8.5 容器
 
-一个容器需要实现Container接口。但是自己写全部的逻辑实在有点复杂，当然，你也可以学习原版箱子，直接继承RandomizableContainerBlockEntity来节省很多工作
+一个容器需要实现Container接口。但是自己写全部的逻辑实在有点复杂，当然，你也可以学习原版箱子，直接继承`RandomizableContainerBlockEntity`来节省很多工作。Forge提供的`Capability`的`ForgeCapabilities.ITEM_HANDLER`也可以替代这项工作，但是是后话了。
 
 ## RandomizableContainerBlockEntity
 
@@ -44,7 +44,7 @@ public class TestTE extends RandomizableContainerBlockEntity {
 
 看起来这已经是一个完善的容器了，看起来。但是他没有数据持久化，退出重进游戏，你的数据就，没啦。
 
-这时候我们需要回顾一下上一章的知识，把物品数据通过load和saveAdditional保存，这里可以用原版的工具类ContainerHelper提供的方法
+这时候我们需要回顾一下上一章的知识，把物品数据通过`load`和`saveAdditional`保存，这里可以用原版的工具类`ContainerHelper`提供的方法
 
 ``` java
     public void load(CompoundTag pTag) {
@@ -61,4 +61,4 @@ public class TestTE extends RandomizableContainerBlockEntity {
     }
 ```
 
-仔细的读者已经发现了，上文的createMenu方法返回了null，这是用来玩家与这个容器方块实体交互的时候打开一个gui，比如玩家与箱子交互时，就会打开ChestMenu，这就是后话了，有兴趣的可以自己看原版木桶的逻辑的实现（因为箱子涉及到大箱子时，有两个方块，逻辑比较复杂）
+仔细的读者已经发现了，上文的`createMenu`方法返回了null，这是用来玩家与这个容器方块实体交互的时候打开一个gui，比如玩家与箱子交互时，就会打开ChestMenu，这就是后话了，有兴趣的可以自己看原版木桶的逻辑的实现（因为箱子涉及到大箱子时，有两个方块，逻辑比较复杂）

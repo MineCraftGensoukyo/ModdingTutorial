@@ -1,6 +1,6 @@
 # 8.1 注册方块实体
 
-首先，方块实体的方块应该继承自BaseEntityBlock并实现其中的接口方法newBlockEntity，这里要返回一个方块实体的实例，先按下不表。
+首先，方块实体的方块应该继承自`BaseEntityBlock`并实现其中的接口方法`newBlockEntity`，这里要返回一个方块实体的实例，先按下不表。
 
 ``` java
 public class TestBlock extends BaseEntityBlock {
@@ -16,13 +16,13 @@ public class TestBlock extends BaseEntityBlock {
 }
 ```
 
-然后把这个方块注册进DeferredRegister<Block> BLOCKS中
+然后把这个方块注册进`DeferredRegister<Block> BLOCKS`中
 
 ``` java
     public static final RegistryObject<Block> TEST = BLOCKS.register("crucible", TestBlock::new);
 ```
 
-方块实体本身需要继承BlockEntity类
+方块实体本身需要继承`BlockEntity`类
 
 ``` java
 public class TestBE extends BlockEntity {

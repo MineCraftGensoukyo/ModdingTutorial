@@ -9,9 +9,9 @@
 
 比如AbstractContainerScreen的tick方法是final，不能被子类覆写。那这里就可以使用AT将final标志移除
 
-在Linkie中查到AT：public net.minecraft.client.gui.screens.inventory.AbstractContainerScreen m_86600_()V # tick
+在Linkie中查到AT：`public net.minecraft.client.gui.screens.inventory.AbstractContainerScreen m_86600_()V # tick`
 
-直接在accesstransformer.cfg加入上面这行字，然后在IDEA-文件中使缓存失效，重载项目，构建完成后，就能看到该方法不再是final方法了
+直接在`accesstransformer.cfg`加入上面这行字，然后在IDEA-文件中使缓存失效，重载项目，构建完成后，就能看到该方法不再是final方法了
 
 ``` java
    public void tick() {

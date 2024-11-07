@@ -46,7 +46,7 @@ public abstract class MixinPlayer {
 }
 ```
 
-这里我们mixin了Player类的getDeathSound方法，如果你的IDEA安装了Minecraft Dev插件，就能看到类名坐标有一个SpongePower的logo，这就是mixin类的标志。
+这里我们`mixin了Player`类的`getDeathSound`方法，如果你的IDEA安装了Minecraft Dev插件，就能看到类名坐标有一个SpongePower的logo，这就是mixin类的标志。
 
 Inject注释表明我们将注入这个方法，注释中有两个必要参数，要注入的方法和要注入的点。示例中表明我们将在Player.getDeathSound方法的开头中插入我们的代码，mixin方法的参数可以有Minecraft Dev插件自动生成。
 
@@ -80,7 +80,7 @@ public abstract class MixinGuiGraphics implements GuiGraphicsInterface {
 }
 ```
 
-这里我们的mixin类实现了预设的接口，并覆写了这个方法。在使用的时候我们需要先将GuiGraphics类转为GuiGraphicsInterface接口类，再调用我们自己的方法livelyDanmaku$drawLine
+这里我们的mixin类实现了预设的接口，并覆写了这个方法。在使用的时候我们需要先将GuiGraphics类转为GuiGraphicsInterface接口类，再调用我们自己的方法`livelyDanmaku$drawLine`
 
 ``` java
     @Override
@@ -90,4 +90,4 @@ public abstract class MixinGuiGraphics implements GuiGraphicsInterface {
     }
 ```
 
-提醒：每个mixin类都必须在mixins.json文件中表明
+提醒：每个mixin类都必须在`mixins.json`文件中表明

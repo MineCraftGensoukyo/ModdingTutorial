@@ -1,12 +1,12 @@
 # 7.3 Block 与 Blockstate 
 
 ## 介绍
-方块模型由两部分组成:BlockModel和BlockState。
+方块模型由两部分组成BlockModel和BlockState。
 前者决定了该方块的手持时的渲染。后者决定在世界中的渲染形态。
 缺失前者：无论如何都是紫黑块。缺失后者：放在世界当中时，会变成紫黑块。
 
 ## 使用
-当美工给你发来了一个blockbench导出的物品/方块模型json文件时，就可以继承BlockStateProvider为其生成对应的blockstate
+当美工给你发来了一个blockbench导出的物品/方块模型json文件时，就可以继承`BlockStateProvider`为其生成对应的blockstate
 
 ``` java
 public class ModBlockState extends BlockStateProvider {

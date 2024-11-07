@@ -1,9 +1,9 @@
 # 8.2 BaseEntityBlock的特性
 
-以下是一些可能需要覆写的BaseEntityBlock的方法，来实现一些功能
+以下是一些可能需要覆写的`BaseEntityBlock的方法`，来实现一些功能
 
 ## getRenderShape
-这个方法返回这个方法的渲染方式，默认返回是INVISIBLE，也就是不渲染，如果覆写为MODEL，就和正常方块的行为一样按assets里的json文件模型
+这个方法返回这个方法的渲染方式，默认返回是`INVISIBLE`，也就是不渲染，如果覆写为`MODEL`，就和正常方块的行为一样按assets里的json文件模型
 
 ``` java
     public @NotNull RenderShape getRenderShape(@NotNull BlockState blockState) {
@@ -33,4 +33,4 @@
 
 ## getMenuProvider
 
-如果对应的方块实体实现了MenuProvider接口，那么它将返回一个MenuProvider对象，可以用来在use方法内打开对应的gui
+如果对应的方块实体实现了`MenuProvider`接口，那么它将返回一个`MenuProvider`对象，可以用来在use方法内打开对应的gui

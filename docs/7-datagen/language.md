@@ -2,7 +2,7 @@
 
 ## 介绍
 
-语言文件本质上就是一对键值对，可以继承LanguageProvider来快速生成对应的语言文件
+语言文件本质上就是一对键值对，可以继承`LanguageProvider`来快速生成对应的语言文件
 
 ``` java
 public class ModLanguage extends LanguageProvider {
@@ -17,7 +17,7 @@ public class ModLanguage extends LanguageProvider {
 }
 ```
 
-LanguageProvider有多个重载方法add()，这是为了写的时候方便很多
+`LanguageProvider`有多个重载方法add()，这是为了写的时候方便很多
 比如我们想直接写一对翻译键值对，就可以
 
 ``` java
@@ -27,13 +27,13 @@ LanguageProvider有多个重载方法add()，这是为了写的时候方便很�
     }
 ```
 
-如果想要快速给物品/方块设置名字，也可以直接调用add方法，这也得益于父类中这么多的重载方法
+如果想要快速给物品/方块设置名字，也可以直接调用`add`方法，这也得益于父类中这么多的重载方法
 
 ``` java
         this.add(ItemRegistry.ChromeBall.get(), "ChromeBall");
 ```
 
-但是这个文件只能用来放一个语言对应的语言文件，如果我们需要英文和中文，就需要两个类ModLanguageEN和ModLanguageCN分别继承LanguageProvider，再分别在DataGenerator中调用
+但是这个文件只能用来放一个语言对应的语言文件，如果我们需要英文和中文，就需要两个类`ModLanguageEN`和`ModLanguageCN`分别继承`LanguageProvider`，再分别在`DataGenerator`中调用
 
 ``` java
         //Language
@@ -109,7 +109,7 @@ public class ModLanguage implements DataProvider {
 }
 ```
 
-这里基本上照抄了LanguageProvider的逻辑，并进行了一些小修改，在addTranslations方法中，调用我们自己的add方法，分别传入目标键，英文值，中文值，这样就可以在DataGenerator里面这样调用，实现我们的愿望。
+这里基本上照抄了`LanguageProvider`的逻辑，并进行了一些小修改，在`addTranslations`方法中，调用我们自己的`add`方法，分别传入目标键，英文值，中文值，这样就可以在`DataGenerator`里面这样调用，实现我们的愿望。
 
 ``` java
         //Language

@@ -61,29 +61,31 @@ nav:
           - 前言: self-study/ai/pre.md
           - 典型错误:
               - 模型错误: self-study/ai/error/model.md
+  - 事件系统:
+      - 事件: 6.5-event/event.md
   - 资源生成:
-      - 前言: datagen/pre.md
-      - 开始: datagen/begin.md
-      - 物品: datagen/item.md
-      - 方块: datagen/block.md
-      - 语言: datagen/language.md
-      - 碎碎念: datagen/extra.md
+      - 前言: 7-datagen/pre.md
+      - 开始: 7-datagen/begin.md
+      - 物品: 7-datagen/item.md
+      - 方块: 7-datagen/block.md
+      - 语言: 7-datagen/language.md
+      - 碎碎念: 7-datagen/extra.md
   - 方块实体:
-      - 前言: blockentity-basic/pre.md
-      - 注册方块实体: blockentity-basic/register.md
-      - 基础方块: blockentity-basic/baseentityblock.md
-      - 方块实体: blockentity-basic/blockentity.md
-      - 方块实体的渲染: blockentity-basic/render.md
-      - 容器: blockentity-basic/container.md
-      - 示例: blockentity-basic/example.md
+      - 前言: 8-blockentity-basic/pre.md
+      - 注册方块实体: 8-blockentity-basic/register.md
+      - 基础方块: 8-blockentity-basic/baseentityblock.md
+      - 方块实体: 8-blockentity-basic/blockentity.md
+      - 方块实体的渲染: 8-blockentity-basic/render.md
+      - 容器: 8-blockentity-basic/container.md
+      - 示例: 8-blockentity-basic/example.md
   - 实体基础:
-      - 前言: base-entity/pre.md
-      - 注册: base-entity/register.md
-      - 基础: base-entity/base.md
+      - 前言: 9-base-entity/pre.md
+      - 注册: 9-base-entity/register.md
+      - 基础: 9-base-entity/base.md
   - 能力:
-      - 前言: capability/pre.md
-      - 开始使用能力: capability/begin.md
-      - 使用预定义能力: capability/handler.md
+      - 前言: 10-capability/pre.md
+      - 开始使用能力: 10-capability/begin.md
+      - 使用预定义能力: 10-capability/handler.md
   - 黑魔法:
       - 前言: magic/pre.md
       - AT: magic/at.md

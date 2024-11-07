@@ -2,9 +2,9 @@
 
 ## Provider实现
 
-所有数据生成器都实现了 DataProvider 接口，当然对于基础需求，我们没有必要自己都自己写，原版提供了一套可以直接拿来用的轮子
+所有数据生成器都实现了`DataProvider`接口，当然对于基础需求，我们没有必要自己都自己写，原版提供了一套可以直接拿来用的轮子
 
-比如如果我们只需要单纯的为一个物品提供一个贴图，那么可以直接继承原版的ItemModelProvider类
+比如如果我们只需要单纯的为一个物品提供一个贴图，那么可以直接继承原版的`ItemModelProvider`类
 
 ``` java
 public class ModItem extends ItemModelProvider {
@@ -19,8 +19,8 @@ public class ModItem extends ItemModelProvider {
 }
 ```
 
-然后在registerModels方法中，调用basicItem方法生成。
-注意，basicItem方法需要在对应的assets/modid/textures/item/下有一个与物品名称相同的png材质文件，否则会报错无法生成
+然后在`registerModels`方法中，调用`basicItem`方法生成。
+注意，basicItem方法需要在对应的`assets/modid/textures/item/`下有一个与物品名称相同的png材质文件，否则会报错无法生成
 
 ``` java
 @Override
@@ -64,7 +64,7 @@ public class DataGenerator {
 
 ## 额外
 当然，如果你觉得basicItem方法只能在texture下面找材质文件实在是太傻了，也可以自己写方法来自定义生成
-比如如果你想在texture/cooker路径下放材质文件，那么就可以自己写这么一个方法
+比如如果你想在`texture/cooker`路径下放材质文件，那么就可以自己写这么一个方法
 
 ``` java
     public ItemModelBuilder localItem(Item item, String filePath) {

@@ -22,7 +22,7 @@ public class DataGenerator {
 ```
 
 ## 小贴士
-默认生成的资源文件在scr/resources下面，在打包成jar文件的时候会自动合并到main/java/resource里面。
+默认生成的资源文件在`scr/resources`下面，在打包成jar文件的时候会自动合并到`main/java/resource`里面。
 
 每次生成都是覆写式的，清除旧文件，生成新的。
 
