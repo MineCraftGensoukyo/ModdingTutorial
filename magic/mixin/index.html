@@ -12,6 +12,8 @@
         <link rel="prev" href="../at/">
       
       
+        <link rel="next" href="../../11-extra/pre/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
@@ -2648,6 +2650,15 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      使用目标类的内容
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       添加新方法
     </span>
   </a>
@@ -2658,6 +2669,142 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    书后谈
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            书后谈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/debug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    debug
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/annotate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    注释
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/additional.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    额外
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2716,6 +2863,15 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用目标类的内容
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       添加新方法
     </span>
@@ -2777,7 +2933,27 @@ public abstract class MixinPlayer {
 <p>注入点参考如下<a href="https://mouse0w0.github.io/2020/03/24/Mixin-Reference-Injection-Point-Reference/">Mixin参考——注入点参考</a></p>
 <p>在方法里，我们拿到玩家的物品栏并且判断装备栏的头部是否为这一个物品，如果是，就返回原来的SoundEvents.PLAYER_DEATH</p>
 <p>但是显而易见，一个人的mixin对这里进行了修改，那么如果另一个人也想对这里进行修改，那么二者就会打架，虽然mixin也提供了Priority优先级，但是总归还是有一定兼容风险的。</p>
-<h2 id="_2">添加新方法</h2>
+<h2 id="_2">使用目标类的内容</h2>
+<p>有时候，在需要修改的方法中，引用了目标类的方法或者字段，这里就可以使用@Shadow注解来调用，或者强转this类型进行调用</p>
+<p>比如目标类中有一个私有字段<code>private final Minecraft minecraft</code>，这时候我们就可以在我们的mixin类中直接添加字段</p>
+<pre><code class="language-java">    @Final
+    @Shadow
+    private Minecraft minecraft;
+</code></pre>
+<p>同样的，也可以用类似的方法调用方法，比如目标方法为</p>
+<pre><code class="language-java">   public int getWidth() {
+      return getWidth(this.minecraft.options.chatWidth().get());
+   }
+
+我们只需要有样学样的在mixin类中加入如下方法，即可使用
+
+`````` java  
+    @Shadow
+    public int getWidth() {
+        return 0;
+    }
+</code></pre>
+<h2 id="_3">添加新方法</h2>
 <p>当然，mixin也允许你在类中凭空添加一个自己的方法，也就是重写方法</p>
 <p>首先，我们要准备一个接口，这个方法就是我们将要写的新方法了</p>
 <pre><code class="language-java">public interface GuiGraphicsInterface {
@@ -2845,6 +3021,22 @@ public abstract class MixinGuiGraphics implements GuiGraphicsInterface {
             </div>
           </a>
         
+        
+          
+          <a href="../../11-extra/pre/" class="md-footer__link md-footer__link--next" aria-label="Next: 前言">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                前言
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

@@ -2615,6 +2615,142 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    书后谈
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            书后谈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/pre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/debug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    debug
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/annotate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    注释
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-extra/additional.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    额外
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2654,11 +2790,20 @@
 <h1 id="accesstransformer">AccessTransformer</h1>
 <p>访问转换器（简称AT）允许扩大可见性并修改类、方法和字段的final标志。它们允许模组开发者访问和修改其控制之外的类中不可访问的成员。</p>
 <p>这方面的教程可以直接阅读中文forge文档<a href="https://forge-doc-120x-zh-cn.readthedocs.io/zh-cn/latest/advanced/accesstransformers/">ACcessTransform</a></p>
-<p>关于srg名，可以使用Minecraft插件查询，也可以在这里直接查询<a href="https://linkie.shedaniel.dev/mappings?namespace=mojang_srg&amp;version=1.20.1&amp;search=&amp;translateMode=none">Linkie</a></p>
+<p>关于srg名，可以使用Minecraft插件查询，对着需要查询的字段或方法右键查询srg名。</p>
+<p>也可以在这里直接查询<a href="https://linkie.shedaniel.dev/mappings?namespace=mojang_srg&amp;version=1.20.1&amp;search=&amp;translateMode=none">Linkie</a></p>
+<p>在使用AT之前，首先需要在gradle中添加如下部分</p>
+<pre><code class="language-java">// 此代码块也是指定映射版本的位置
+minecraft {
+  accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+}
+</code></pre>
+<p>当然，如果你使用的是Forge分发的mdk，也可以在minecraft{}中找到被注释掉的这行，只需要直接恢复就好了</p>
 <p>这里给出部分案例</p>
 <p>比如AbstractContainerScreen的tick方法是final，不能被子类覆写。那这里就可以使用AT将final标志移除</p>
-<p>在Linkie中查到AT：<code>public net.minecraft.client.gui.screens.inventory.AbstractContainerScreen m_86600_()V # tick</code></p>
-<p>直接在<code>accesstransformer.cfg</code>加入上面这行字，然后在IDEA-文件中使缓存失效，重载项目，构建完成后，就能看到该方法不再是final方法了</p>
+<p>在Linkie中查到AT：<code>public-f net.minecraft.client.gui.screens.inventory.AbstractContainerScreen m_86600_()V # tick</code></p>
+<p>直接在<code>accesstransformer.cfg</code>加入上面这行字，然后在IDEA-文件中使缓存失效，重载gradle项目，构建完成后，就能看到该方法不再是final方法了
+<img alt="刷新gradle" src="../images/fresh_gradle.png" /></p>
 <pre><code class="language-java">   public void tick() {
       super.tick();
       if (this.minecraft.player.isAlive() &amp;&amp; !this.minecraft.player.isRemoved()) {
