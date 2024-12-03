@@ -22,7 +22,7 @@ public class PlayerEvent {
 
 注解中也可以写入一些参数
 
-- `bus` ：用来选择是在哪条总线上进行监听，比如要监听Mod总线，就需要 `bus = Mod.EventBusSubscriber.Bus.MOD`
+- `bus` ：用来选择是在哪条总线上进行监听，默认监听的Forge总线，比如要监听Mod总线，就需要 `bus = Mod.EventBusSubscriber.Bus.MOD`
 - `value` ：用来选择在哪个端进行监听，比如要监听的是客户端事件，就需要`value = Dist.CLIENT` 
 - `modid` ：用来确定你的modid，可以直接写上`modid = ExampleMod.MOD_ID`
 

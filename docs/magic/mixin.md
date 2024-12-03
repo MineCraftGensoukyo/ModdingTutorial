@@ -56,6 +56,34 @@ Inject注释表明我们将注入这个方法，注释中有两个必要参数�
 
 但是显而易见，一个人的mixin对这里进行了修改，那么如果另一个人也想对这里进行修改，那么二者就会打架，虽然mixin也提供了Priority优先级，但是总归还是有一定兼容风险的。
 
+## 使用目标类的内容
+
+有时候，在需要修改的方法中，引用了目标类的方法或者字段，这里就可以使用@Shadow注解来调用，或者强转this类型进行调用
+
+比如目标类中有一个私有字段`private final Minecraft minecraft`，这时候我们就可以在我们的mixin类中直接添加字段
+
+``` java  
+    @Final
+    @Shadow
+    private Minecraft minecraft;
+```
+
+同样的，也可以用类似的方法调用方法，比如目标方法为
+
+``` java  
+   public int getWidth() {
+      return getWidth(this.minecraft.options.chatWidth().get());
+   }
+
+我们只需要有样学样的在mixin类中加入如下方法，即可使用
+
+`````` java  
+    @Shadow
+    public int getWidth() {
+        return 0;
+    }
+```
+
 ## 添加新方法
 
 当然，mixin也允许你在类中凭空添加一个自己的方法，也就是重写方法

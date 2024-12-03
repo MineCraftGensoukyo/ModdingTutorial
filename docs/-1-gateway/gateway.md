@@ -18,9 +18,11 @@
 
 ## 个人教程
 
-[USS-shenzhou的HoloJaneway](https://holojaneway.uss-shenzhou.cn/holojaneway) (记得关注示例代码的版本)
+[USS-shenzhou的HoloJaneway](https://holojaneway.uss-shenzhou.cn/holojaneway) uss_shenzhou，(记得关注示例代码的版本)
 
-[Harbinger](https://harbinger.covertdragon.team/)古老的1.12的模组教程
+[Harbinger](https://harbinger.covertdragon.team/) 3TUSK，古老的1.12的模组教程
+
+[Minecraft 1.8.9 FML Mod 开发教程](https://fmltutor.ustc-zzzz.net/) ustc_zzzz（土球），更加古老的1.8的模组教程
 
 [Boson 1.16 Modding Tutorial](https://boson.v2mcdev.com/introducation/intro.html)面向1.16的全面教程，内容全面且详细
 
@@ -31,3 +33,5 @@
 [Flandre923的个人博客](https://fuwari-ald.pages.dev/archive/tag/Minecraft1_20_4/) 非常肝的教程作者，面向1.20.4，与我们现用的1.20.1略有区别。同时，Flandre923录制了对应的视频[合集·我的世界1.20.1NeoForge教程](https://space.bilibili.com/4550069/channel/collectiondetail?sid=1680151)
 
 [兔肉的个人博客](https://turou.fun/tags/Minecraft/) 详尽介绍了mc的gui和其他部分，以深入浅出的笔触描述了mc本身
+
+[CoreModTutor](https://xfl03.gitbook.io/coremodtutor) xfl03，coremod教程

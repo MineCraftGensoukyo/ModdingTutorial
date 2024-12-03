@@ -90,3 +90,8 @@ nav:
       - 前言: magic/pre.md
       - AT: magic/at.md
       - mixin: magic/mixin.md
+  - 书后谈:
+      - 前言: 11-extra/pre.md
+      - debug: 11-extra/debug.md
+      - 注释: 11-extra/annotate.md
+      - 额外: 11-extra/additional.md
